@@ -71,7 +71,7 @@ const Banner = () => {
                     willing to change and teamwork management. I like to fulfill
                     and be responsible in any problem or work.
                   </p>
-                  <a href="../src/assets/documents/cvpro1.0.pdf" download>
+                  <a href="./src/assets/documents/cvpro1.0.pdf" download>
                     Download CV
                     <ArrowRightCircle size={25} />
                   </a>
