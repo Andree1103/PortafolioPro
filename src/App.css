@@ -271,7 +271,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner a {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -279,15 +279,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  list-style: none;
 }
-.banner button svg {
+
+.banner a svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner a:hover {
+  color: white;
+}
+.banner a:hover svg {
   margin-left: 25px;
+  color: white;
 }
 .banner img {
   animation: updown 3s linear infinite;
@@ -301,6 +308,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+@keyframes animacionLogo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
 .txt-rotate > .wrap {

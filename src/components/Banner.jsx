@@ -54,7 +54,7 @@ const Banner = () => {
     <section>
       <Container className="banner" id="home">
         <Row className="aling-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} style={{ paddingBottom: "35px" }}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -71,10 +71,10 @@ const Banner = () => {
                     willing to change and teamwork management. I like to fulfill
                     and be responsible in any problem or work.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <a href="../src/assets/documents/cvpro.pdf" download>
                     Download CV
                     <ArrowRightCircle size={25} />
-                  </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>
