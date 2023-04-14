@@ -5,7 +5,7 @@ const ProjectCards = ({ title, description, imgUrl, URL }) => {
   return (
     <Col sm={8} md={4} style={{ justifyContent: "center" }}>
       <div className="proj-imgbx">
-        <a href={URL} style={{ color: "white" }}>
+        <a href={URL} style={{ color: "white" }} target="_blank">
           <img src={imgUrl} alt="IMG not Found" />
           <div className="proj-txtx">
             <h4>{title}</h4>

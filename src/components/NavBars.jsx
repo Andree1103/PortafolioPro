@@ -75,13 +75,16 @@ const NavBars = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/andree-chiquis-06a4aa211/">
+              <a
+                href="https://www.linkedin.com/in/andree-chiquis-06a4aa211/"
+                target="_blank"
+              >
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="https://github.com/Andree1103">
+              <a href="https://github.com/Andree1103" target="_blank">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://www.instagram.com/j11_andree/">
+              <a href="https://www.instagram.com/j11_andree/" target="_blank">
                 <img src={navIcon3} alt="" />
               </a>
             </div>

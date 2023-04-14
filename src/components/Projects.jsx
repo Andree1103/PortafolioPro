@@ -119,9 +119,8 @@ const Projects = () => {
                 >
                   <h2>Projecst</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Autem excepturi est vitae quasi, amet aliquam. Similique
-                    eveniet officiis voluptatibus voluptates.
+                    These are some of my projects that I have carried out over
+                    time, which I have continuously improved.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
