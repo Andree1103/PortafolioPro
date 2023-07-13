@@ -44,13 +44,13 @@ const Skill = () => {
         <Row>
           <Col>
             <div className="skill-bx" id="skills">
-              <h2>Skills</h2>
+              <h2>Habilidades</h2>
               <p>
-                Programming languages ​​and systems that I have been learning
-                and mastering through my experience working on different
-                projects. I also master additional topics which I could not put
-                but you can see without any problem by downloading my cv in the
-                link above.
+                Lenguajes de programación y sistemas que he ido aprendiendo y
+                dominando a través de mi experiencia trabajando en diferentes
+                proyectos También domino temas adicionales que no pude poner
+                pero puedes ver sin problema descargando mi cv en el enlace de
+                arriba.
               </p>
               <Carousel
                 responsive={responsive}

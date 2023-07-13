@@ -12,7 +12,15 @@ import frases from "../assets/img/frases.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import gitpng from "../assets/img/gitexample.png";
-
+import imgquickstop from "../assets/img/quickstopjava.png";
+import imgquickstop2 from "../assets/img/moduloventajava.png";
+import imgapiclinicac from "../assets/img/apiClinicaC.png";
+import imgnotasreact from "../assets/img/cnotas.png";
+import imgcl3c from "../assets/img/cl3C.png";
+import imgcrudc from "../assets/img/crudcreact.png";
+import ecommercec from "../assets/img/ecommercec.png";
+import tiendavirtualcl2c from "../assets/img/teindavirtuacl2c.png";
+import QuickStopcc from "../assets/img/quickstopCC.png";
 const Projects = () => {
   const projects = [
     {
@@ -57,24 +65,6 @@ const Projects = () => {
       imgUrl: frases,
       URL: "https://lucky-nougat-539007.netlify.app/",
     },
-  ];
-  const JavaPro = [
-    {
-      title: "Aplicacion Farmacia",
-      description:
-        "Aplicacion que me permite registar, reportar, listar y hacer transacciones. Trabajado en JAVA",
-      imgUrl: farmacia,
-      URL: "https://github.com/Andree1103/Aplicacion-Farmacia",
-    },
-    {
-      title: "Ecommerce Virtual Java",
-      description:
-        "Aplicacion que me listar, comprar y hacer mantenimientos a los productos, clientes , proveedores utilizando Servlets,etc. Trabajado en JAVA",
-      imgUrl: tiendaACEE,
-      URL: "https://github.com/Andree1103/Tienda-Virtual-Java",
-    },
-  ];
-  const NodePro = [
     {
       title: "Api ecommerce",
       description:
@@ -104,6 +94,86 @@ const Projects = () => {
       URL: "https://github.com/Andree1103/Restaurant_API",
     },
   ];
+  const JavaPro = [
+    {
+      title: "Aplicacion Farmacia",
+      description:
+        "Aplicacion que me permite registar, reportar, listar y hacer transacciones. Trabajado en JAVA",
+      imgUrl: farmacia,
+      URL: "https://github.com/Andree1103/Aplicacion-Farmacia",
+    },
+    {
+      title: "Ecommerce Virtual Java",
+      description:
+        "Aplicacion que me listar, comprar y hacer mantenimientos a los productos, clientes , proveedores utilizando Servlets,etc. Trabajado en JAVA",
+      imgUrl: tiendaACEE,
+      URL: "https://github.com/Andree1103/Tienda-Virtual-Java",
+    },
+    {
+      title: "QuickStop",
+      description:
+        "Modulo de Ventas realizado utilizando SpringBoot que me permitiria tener un mejor control de mi negocio, ademas me permitira generar ventas y esta protegido por SpringSecurity.",
+      imgUrl: imgquickstop,
+      URL: "https://github.com/Andree1103/Spring_quickstop",
+    },
+    {
+      title: "Modulo de Ventas",
+      description:
+        "Tienda virtual realizada utilizando SpringBoot que me permitiria tener un mejor control de mi negocio, ademas me permitira generar ventas y esta protegido por SpringSecurity.",
+      imgUrl: imgquickstop2,
+      URL: "https://github.com/Andree1103/ProyectoDawi",
+    },
+  ];
+  const NodePro = [
+    {
+      title: "Api de clinica",
+      description:
+        "Una api realizada en .netCore6.0 que me permitira agregar, editar, listar y eliminar citas de mi BD.",
+      imgUrl: imgapiclinicac,
+      URL: "https://github.com/Andree1103/APIClinica-Net6.0",
+    },
+    {
+      title: "Notas React",
+      description:
+        "Una aplicacion web realizada con reactJs y .netcore que me permite agregar notas y eliminarlas.",
+      imgUrl: imgnotasreact,
+      URL: "https://github.com/Andree1103/slnReactNotas",
+    },
+    {
+      title: "Crud React + .NET",
+      description: "Un crud sencillo realizado en .netcore6.0 y reactJS",
+      imgUrl: imgcrudc,
+      URL: "https://github.com/Andree1103/CrudReact.NET6",
+    },
+    {
+      title: "Dar de Baja producto",
+      description:
+        "Aplicacion que me permite dar de baja a mi producto seleccionado cambiandolo de estado logicamente y ademas me crea una nueva tabla con los productos de BAJA",
+      imgUrl: imgcl3c,
+      URL: "https://github.com/Andree1103/DardeBajaC-NET6",
+    },
+    {
+      title: "Ecommerce",
+      description:
+        "Ecommerce que me permite registrar ventas, mirar mis ventas, registrarme, loguearme etc. Realizado en .netcore6.0 utilizando el modelo MVC.",
+      imgUrl: ecommercec,
+      URL: "https://github.com/Andree1103/SistemaInventario6",
+    },
+    {
+      title: "Carrito Local",
+      description:
+        "Programa web que me añade mi producto a un carrito de manera local.",
+      imgUrl: tiendavirtualcl2c,
+      URL: "https://github.com/Andree1103/TiendaVirtualMOdel1",
+    },
+    {
+      title: "Tienda virtual",
+      description:
+        "Tienda virtual realizada en NETCORE6 utilizando capas además con roles y utilizando el modelo MVC",
+      imgUrl: QuickStopcc,
+      URL: "https://github.com/Andree1103/Quickstop.netcore6",
+    },
+  ];
 
   return (
     <section className="project" id="projects">
@@ -117,10 +187,10 @@ const Projects = () => {
                     isVisible ? "animate__animated animate__bounce" : ""
                   }
                 >
-                  <h2>Projecst</h2>
+                  <h2>Proyectos</h2>
                   <p>
-                    These are some of my projects that I have carried out over
-                    time, which I have continuously improved.
+                    Estos son algunos de mis proyectos que he realizado a lo
+                    largo de tiempo, que he mejorado continuamente.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -129,13 +199,13 @@ const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab One</Nav.Link>
+                        <Nav.Link eventKey="first">JavaScript</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab two</Nav.Link>
+                        <Nav.Link eventKey="second">Java</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab three</Nav.Link>
+                        <Nav.Link eventKey="third">C#</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content>

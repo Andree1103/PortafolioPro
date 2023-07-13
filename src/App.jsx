@@ -7,18 +7,22 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ParticlesBack from "./components/ParticlesBack";
 import Footer from "./components/Footer";
+import { IntlProvider, FormattedMessage } from "react-intl";
+import MensajesIngles from "./lang/en-US.json";
 
 function App() {
   return (
-    <div className="App">
-      <ParticlesBack />
-      <NavBars />
-      <Banner />
-      <Skill />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <IntlProvider locale="en-US" messages={MensajesIngles}>
+      <div className="App">
+        <ParticlesBack />
+        <NavBars />
+        <Banner />
+        <Skill />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </IntlProvider>
   );
 }
 

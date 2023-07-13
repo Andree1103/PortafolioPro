@@ -52,7 +52,7 @@ const NavBars = () => {
               }
               onClick={() => onUpdateActiveLink("home")}
             >
-              Home
+              Inicio
             </Nav.Link>
             <Nav.Link
               href="#skills"
@@ -61,7 +61,7 @@ const NavBars = () => {
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              Skill
+              Habilidades
             </Nav.Link>
             <Nav.Link
               href="#projects"
@@ -70,7 +70,7 @@ const NavBars = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              Projects
+              Proyectos
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
@@ -94,7 +94,7 @@ const NavBars = () => {
                 onClick={() => onUpdateActiveLink("connect")}
                 style={{ color: "white" }}
               >
-                Go to Contact
+                Ir al Contacto
               </Nav.Link>
             </button>
           </span>

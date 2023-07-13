@@ -4,6 +4,8 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/Recurso2.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { IntlProvider, FormattedMessage } from "react-intl";
+import MensajesIngles from "../lang/en-US.json";
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +13,11 @@ const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web developer", "Mobile designer", "Systems analyst"];
+  const toRotate = [
+    "Desarrollador Web",
+    "Desarrollador Movil",
+    "Analista de Sistema",
+  ];
   const period = 2000;
 
   useEffect(() => {
@@ -51,43 +57,48 @@ const Banner = () => {
     }
   };
   return (
-    <section>
-      <Container className="banner" id="home">
-        <Row className="aling-items-center">
-          <Col xs={12} md={6} xl={7} style={{ paddingBottom: "35px" }}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Welcome to my portafolio</span>
-                  <h1>
-                    {`Jarol Andree`} <span className="wrap">{text}</span>
-                  </h1>
-                  <p>
-                    Web developer with leadership skills, creativity, innovator
-                    willing to change and teamwork management. I like to fulfill
-                    and be responsible in any problem or work.
-                  </p>
-                  <a
-                    href="https://www.docdroid.net/N4DFVNV/cvpro10-pdf"
-                    target="_blank"
+    <IntlProvider locale="en-US" messages={MensajesIngles}>
+      <section>
+        <Container className="banner" id="home">
+          <Row className="aling-items-center">
+            <Col xs={12} md={6} xl={7} style={{ paddingBottom: "35px" }}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__fadeIn" : ""
+                    }
                   >
-                    Download CV
-                    <ArrowRightCircle size={25} />
-                  </a>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Headder img" />
-          </Col>
-        </Row>
-      </Container>
-    </section>
+                    <span className="tagline">
+                      <FormattedMessage id="app.welcome" defaultMessage="Gaa" />
+                    </span>
+                    <h1>
+                      {`Jarol Andree`} <span className="wrap">{text}</span>
+                    </h1>
+                    <p>
+                      <FormattedMessage
+                        id="app.presentation"
+                        defaultMessage="Gaa"
+                      />
+                    </p>
+                    <a
+                      href="https://www.docdroid.net/N4DFVNV/cvpro10-pdf"
+                      target="_blank"
+                    >
+                      Descargar CV
+                      <ArrowRightCircle size={25} />
+                    </a>
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <img src={headerImg} alt="Headder img" />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </IntlProvider>
   );
 };
 
