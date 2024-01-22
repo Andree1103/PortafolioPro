@@ -64,6 +64,17 @@ const NavBars = () => {
               Habilidades
             </Nav.Link>
             <Nav.Link
+              href="#experience"
+              className={
+                activeLink === "experience"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("experience")}
+            >
+              Experiencia
+            </Nav.Link>
+            <Nav.Link
               href="#projects"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"

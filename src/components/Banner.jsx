@@ -82,7 +82,7 @@ const Banner = () => {
                       />
                     </p>
                     <a
-                      href="https://www.docdroid.net/N4DFVNV/cvpro10-pdf"
+                      href="https://drive.google.com/file/d/1mRtC5aAFv4a2wHEPQWj5ibRCW0wHOj3E/view?usp=sharing"
                       target="_blank"
                     >
                       Descargar CV

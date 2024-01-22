@@ -9,6 +9,7 @@ import ParticlesBack from "./components/ParticlesBack";
 import Footer from "./components/Footer";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import MensajesIngles from "./lang/en-US.json";
+import Experiencie from "./components/Experiencie";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <NavBars />
         <Banner />
         <Skill />
+        <Experiencie />
         <Projects />
         <Contact />
         <Footer />
